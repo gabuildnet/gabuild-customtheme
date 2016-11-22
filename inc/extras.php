@@ -37,3 +37,76 @@ function gabuild_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'gabuild_pingback_header' );
+
+/**
+ * Add custom posts types
+ */
+
+add_action( 'init', 'gabuild_create_post_type' );
+function gabuild_create_post_type() {
+  register_post_type( 'projects',
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Project' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+  register_post_type( 'stories',
+    array(
+      'labels' => array(
+        'name' => __( 'Stories' ),
+        'singular_name' => __( 'Story' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+  register_post_type( 'versions',
+    array(
+      'labels' => array(
+        'name' => __( 'Versions' ),
+        'singular_name' => __( 'Version' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+  register_post_type( 'BOM',
+    array(
+      'labels' => array(
+        'name' => __( 'BOMs' ),
+        'singular_name' => __( 'BOM' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+  register_post_type( 'products-needed',
+    array(
+      'labels' => array(
+        'name' => __( 'Products Needed' ),
+        'singular_name' => __( 'Product Needed' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+  register_post_type( 'products',
+    array(
+      'labels' => array(
+        'name' => __( 'Products' ),
+        'singular_name' => __( 'Products' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
