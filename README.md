@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-built using `_s`, or `underscores`, if you like. It's a theme meant for hacking.
+built using `_s`, or `underscores`, if you like. It's a blank starter theme for wordpress.
 
 GA Build theme
 
