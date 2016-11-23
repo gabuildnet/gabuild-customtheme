@@ -42,8 +42,8 @@ add_action( 'wp_head', 'gabuild_pingback_header' );
  * Add custom posts types
  */
 
-add_action( 'init', 'gabuild_create_post_type' );
-function gabuild_create_post_type() {
+add_action( 'init', 'gabuild_create_post_types' );
+function gabuild_create_post_types() {
   register_post_type( 'projects',
     array(
       'labels' => array(
@@ -52,6 +52,7 @@ function gabuild_create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'taxonomy' => 'project-ypes'
     )
   );
 
@@ -107,6 +108,29 @@ function gabuild_create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'taxonomy' => 'product-type'
     )
   );
+
+  /*
+  *	Register the taxonomies as well for the custom posts.
+  */
+  register_taxonomy('project-types', 'projects', array(
+		'labels' => array(
+        	'name' => __( 'Project Types' ),
+        	'singular_name' => __( 'Project type' )
+      		),
+		'public' => true,
+		)
+	);
+
+  register_taxonomy('product-types', 'products', array(
+		'labels' => array(
+        	'name' => __( 'Product Types' ),
+        	'singular_name' => __( 'Product type' )
+      		),
+		'public' => true,
+		'hierarchical' => true
+		)
+	);
 }
