@@ -46,40 +46,6 @@ function gabuild_create_post_types() {
     )
   );
 
-  register_post_type( 'BOM',
-    array(
-      'labels' => array(
-        'name' => __( 'BOMs' ),
-        'singular_name' => __( 'BOM' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
-
-  register_post_type( 'products-needed',
-    array(
-      'labels' => array(
-        'name' => __( 'Products Needed' ),
-        'singular_name' => __( 'Product Needed' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
-
-  register_post_type( 'products',
-    array(
-      'labels' => array(
-        'name' => __( 'Products' ),
-        'singular_name' => __( 'Products' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'taxonomy' => 'product-type'
-    )
-  );
-
   /*
   *	Register the taxonomies as well for the custom posts.
   */
@@ -91,16 +57,5 @@ function gabuild_create_post_types() {
 		'public' => true,
 		)
 	);
-
-  register_taxonomy('product-types', 'products', array(
-		'labels' => array(
-        	'name' => __( 'Product Types' ),
-        	'singular_name' => __( 'Product type' )
-      		),
-		'public' => true,
-		'hierarchical' => true
-		)
-	);
 }
-
 ?>
