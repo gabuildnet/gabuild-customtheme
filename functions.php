@@ -143,3 +143,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Custom post type generation
  */
 require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
+ * Custom shortcodes
+ */
+require get_template_directory(). '/inc/shortcodes.php';
