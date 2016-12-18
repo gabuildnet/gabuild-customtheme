@@ -102,7 +102,9 @@ add_action( 'widgets_init', 'gabuild_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gabuild_scripts() {
-	wp_enqueue_style( 'gabuild-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'gabuild-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'gabuild-foundation-style', get_template_directory_uri() . '/gabuild-foundation/css/app.css');
 
 	wp_enqueue_script( 'gabuild-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
