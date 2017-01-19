@@ -20,7 +20,8 @@ function gabuild_create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
-      'taxonomy' => 'project-ypes'
+      'taxonomy' => 'project-ypes',
+      'menu_icon' => 'dashicons-category'
     )
   );
 
@@ -32,6 +33,7 @@ function gabuild_create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
+      'menu_icon' => 'dashicons-book-alt'
     )
   );
 
@@ -43,6 +45,7 @@ function gabuild_create_post_types() {
       ),
       'public' => true,
       'has_archive' => true,
+      'menu_icon' => 'dashicons-analytics'
     )
   );
 
