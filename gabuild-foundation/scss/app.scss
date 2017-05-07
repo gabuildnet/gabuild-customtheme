@@ -49,3 +49,48 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//index
+//---------------------------------------------------
+// # Utility
+// # Header
+// # Post
+// # -Project
+// # -Story
+// # -Version
+// # Front-page
+// # Footer
+//---------------------------------------------------
+
+//---------------------------------------------------
+// # Utility
+//---------------------------------------------------
+.screen-reader-text {
+	display: none;
+}
+
+
+//---------------------------------------------------
+// # Header
+//---------------------------------------------------
+
+#masthead {
+	text-align: center;
+	background: #000;
+	color: #fff;
+
+	//Show header title paragraph the same as the h1 when on front page.
+	p.site-title {
+		@extend h1;
+		text-shadow: 2px 2px #ffffff;
+	}
+
+	#primary-menu {
+		ul {
+			li {
+				display: inline-block;
+				padding: 10px 10px;
+			}
+		}
+	}
+}
