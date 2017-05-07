@@ -105,7 +105,7 @@ function gabuild_scripts() {
 	//wp_enqueue_style( 'gabuild-style', get_stylesheet_uri() );
 
 	//Embed the google fonts
-	wp_enqueue_style( 'gabuild-google-font', 'https://fonts.googleapis.com/css?family=Permanent+Marker');
+	wp_enqueue_style( 'gabuild-google-font', 'https://fonts.googleapis.com/css?family=Permanent+Marker|Ubuntu');
 
 	wp_enqueue_style( 'gabuild-foundation-style', get_template_directory_uri() . '/gabuild-foundation/css/app.css');
 
