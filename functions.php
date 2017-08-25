@@ -107,13 +107,13 @@ function gabuild_scripts() {
 	//Embed the google fonts
 	wp_enqueue_style( 'gabuild-google-font', 'https://fonts.googleapis.com/css?family=Permanent+Marker|Ubuntu');
 
-	wp_enqueue_style( 'gabuild-foundation-style', get_template_directory_uri() . '/gabuild-foundation/css/app.css');
+	wp_enqueue_style( 'gabuild-foundation-style', get_template_directory_uri() . '/gabuild/dist/assets/css/app.css');
 
 	wp_enqueue_script( 'gabuild-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'gabuild-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'gabuild-foundation-js', get_template_directory_uri() . '/gabuild-foundation/js/app.js', array('jQuery'), '20160223', true );
+	wp_enqueue_script( 'gabuild-foundation-js', get_template_directory_uri() . '/gabuild/dist/assets/js/app.js', array('jQuery'), '20160223', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
