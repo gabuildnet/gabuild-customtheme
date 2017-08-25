@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
@@ -18,8 +19,16 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe(gulp.dest('css'));
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default', ['sass'], function() {
+  browserSync.init({
+    proxy: "www.gabuild.dev"
+  });
+
+
   gulp.watch(['scss/**/*.scss'], ['sass']);
+
+
 });

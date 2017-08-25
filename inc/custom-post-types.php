@@ -62,6 +62,7 @@ function gabuild_create_post_types() {
 	);
 }
 
+//Create custom fields for Story and version post types.
 if(function_exists("register_field_group"))
 {
   register_field_group(array (
