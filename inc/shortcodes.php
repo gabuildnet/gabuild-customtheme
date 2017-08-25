@@ -23,9 +23,11 @@ function gabuild_projects_shortcode($atts, $content = null) {
 
 	//The loop
 	if ($the_query->have_posts()) {
-		$result .= '<div class="projects">';
+		$result .= '<div class="projects flex-grid">';
 		while ($the_query->have_posts()) {
 			$the_query->the_post();
+
+
 		}
 		$result .= '</div>';
 	}
