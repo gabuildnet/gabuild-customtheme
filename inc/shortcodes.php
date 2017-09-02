@@ -26,8 +26,9 @@ function gabuild_projects_shortcode($atts, $content = null) {
 		$result .= '<div class="projects flex-grid">';
 		while ($the_query->have_posts()) {
 			$the_query->the_post();
-
-
+			$result .= '<div class="gaproject">';
+			$result .= '<h3>' . get_the_title() . '</h3>';
+			$result .= '</div>';
 		}
 		$result .= '</div>';
 	}
@@ -36,5 +37,6 @@ function gabuild_projects_shortcode($atts, $content = null) {
 
 	return $result;
 }
+add_shortcode('gaprojects', 'gabuild_projects_shortcode');
 
  ?>
