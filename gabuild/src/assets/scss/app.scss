@@ -82,7 +82,7 @@
 	color: #fff;
 
 	//Show header title paragraph the same as the h1 when on front page.
-	p.site-title {
+	p.site-title, h1.site-title {
 		@extend h1;
 		text-shadow: 2px 2px #ffffff;
 	}
