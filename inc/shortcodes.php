@@ -29,7 +29,9 @@ function gabuild_projects_shortcode($atts, $content = null) {
 		while ($the_query->have_posts()) {
 			$the_query->the_post();
 			$result .= '<div class="gaproject cell">';
-			$result .= '<h4>' . get_the_title() . '</h3>';
+			$result .= '<a href="' . get_permalink(); . '">';
+			$result .= '<h4>' . get_the_title() . '</h4>';
+			$result .= '</a>';
 			$result .= '<div class="gaproject-featured-img">';
 			if (has_post_thumbnail()){
 				$result .= get_the_post_thumbnail( null, 'post-thumbnail');
