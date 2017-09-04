@@ -116,7 +116,25 @@
 	.gaproject {
 		border: 1px solid $light-gray;
 		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-		color: $white;
+		color: $black;
 		background-color: $black;
+	}	
+
+	.gaproject {
+		text-align: center;
+	}
+
+	.gaproject h4 {
+		background-color: $white;
+		display:inline-block;
+		padding: 4px 15px;
+		margin-top: 20px;
+		border-radius: 3px;
+	}
+
+	.gaproject-content {
+		text-align: left;
+		color: $white;
+		margin-bottom: 20px;
 	}
 }
