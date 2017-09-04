@@ -6,7 +6,7 @@
 
 @include foundation-global-styles;
 // @include foundation-grid;
-//@include foundation-flex-grid;
+// @include foundation-flex-grid;
 //
 @include foundation-xy-grid-classes;
 @include foundation-typography;
@@ -56,6 +56,7 @@
 //---------------------------------------------------
 // # Utility
 // # Header
+// # Front-page
 // # Post
 // # -Project
 // # -Story
@@ -71,6 +72,9 @@
 	display: none;
 }
 
+.center {
+	text-align: center
+}
 
 //---------------------------------------------------
 // # Header
@@ -94,5 +98,25 @@
 				padding: 10px 10px;
 			}
 		}
+	}
+}
+
+//---------------------------------------------------
+// # Front-page
+//---------------------------------------------------
+.home {
+	h2.entry-title {
+		display: none;
+	}
+
+	.projects {
+		margin-bottom: 20px;
+	}
+
+	.gaproject {
+		border: 1px solid $light-gray;
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		color: $white;
+		background-color: $black;
 	}
 }
