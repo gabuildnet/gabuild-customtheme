@@ -29,7 +29,7 @@ function gabuild_projects_shortcode($atts, $content = null) {
 		while ($the_query->have_posts()) {
 			$the_query->the_post();
 			$result .= '<div class="gaproject cell">';
-			$result .= '<a href="' . get_permalink(); . '">';
+			$result .= '<a href="' . get_permalink() . '">';
 			$result .= '<h4>' . get_the_title() . '</h4>';
 			$result .= '</a>';
 			$result .= '<div class="gaproject-featured-img">';
