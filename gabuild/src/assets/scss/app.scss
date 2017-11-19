@@ -73,7 +73,7 @@
 }
 
 .center {
-	text-align: center
+	text-align: center;
 }
 
 //---------------------------------------------------
@@ -81,7 +81,7 @@
 //---------------------------------------------------
 
 #masthead {
-	text-align: center;
+	text-align: left;
 	background: #000;
 	color: #fff;
 
@@ -117,15 +117,11 @@
 		border: 1px solid $light-gray;
 		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 		color: $black;
-		background-color: $black;
+		background-color: $white;
+		text-align: center;
 	}	
 
-	.gaproject {
-		text-align: center;
-	}
-
 	.gaproject h4 {
-		background-color: $white;
 		display:inline-block;
 		padding: 4px 15px;
 		margin-top: 20px;
@@ -134,7 +130,7 @@
 
 	.gaproject-content {
 		text-align: left;
-		color: $white;
+		color: $black;
 		margin-bottom: 20px;
 	}
 }
