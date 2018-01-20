@@ -82,12 +82,13 @@
 
 #masthead {
 	text-align: left;
-	background: #000;
+	background: #252525;
 	color: #fff;
 
 	//Show header title paragraph the same as the h1 when on front page.
 	p.site-title, h1.site-title {
 		@extend h1;
+		color: #000;
 		text-shadow: 2px 2px #ffffff;
 	}
 
@@ -115,9 +116,9 @@
 
 	.gaproject {
 		border: 1px solid $light-gray;
-		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		//box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 		color: $black;
-		background-color: $white;
+		background-color: #f5f5ff;
 		text-align: center;
 	}	
 
@@ -126,6 +127,7 @@
 		padding: 4px 15px;
 		margin-top: 20px;
 		border-radius: 3px;
+		color: $primary-color;
 	}
 
 	.gaproject-content {
